@@ -1,0 +1,33 @@
+@import "tailwindcss";
+@keyframes slowFloat {
+    0% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-20px) rotate(5deg); }
+    100% { transform: translateY(0px) rotate(0deg); }
+  }
+  
+  .animate-slowFloat {
+    animation: slowFloat 10s ease-in-out infinite;
+  }
+  
+  @keyframes slowFloat {
+    0% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-20px) rotate(5deg); }
+    100% { transform: translateY(0px) rotate(0deg); }
+  }
+  
+  .animate-slowFloat {
+    animation: slowFloat 10s ease-in-out infinite;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  #about, #work, #contact {
+    scroll-margin-top: 80px;
+  }
+  #about {
+    padding-bottom: 100px; 
+  }
+    
+
+ 
