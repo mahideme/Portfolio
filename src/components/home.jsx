@@ -25,10 +25,10 @@ const Home = () => {
 
 
       <div className="flex-1 mb-8 md:mb-0 z-10 text-center md:text-left" data-aos="fade-right">
-        <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
-          Hi 🙋‍♀️, I'm Mahlet Demeke
-          
-        </h1>
+      <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold text-white mb-2 leading-snug break-words">
+  Hi <span role="img" aria-label="wave">🙋‍♀️</span>, I'm Mahlet Demeke
+</h1>
+
         <p className="text-lg text-gray-400 mb-6">
         Network Engineer passionate about building and securing modern networks. Skilled in networking, programming, and cloud fundamentals. Welcome to my portfolio!
         </p>
