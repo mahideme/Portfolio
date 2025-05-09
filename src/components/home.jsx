@@ -24,8 +24,8 @@ const Home = () => {
       </div>
 
 
-      <div className="flex-1 mb-8 md:mb-0 z-10 text-center md:text-left" data-aos="fade-right">
-        <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
+      <div className="flex-1 mb-8 md:mb-0 z-10 text-center md:text-left" data-aos="fade-right"><br /> <br /><br />
+        <h1 className="text-7xl md:text-6xl font-bold text-white mb-4">
           Hi 🙋‍♀️, I'm Mahlet Demeke
         </h1>
         <p className="text-lg text-gray-400 mb-6">
