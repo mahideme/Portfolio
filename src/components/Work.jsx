@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-
 import project1 from '../assets/project1.jpg';
 import project4 from '../assets/project4.jpg';
 import project3 from '../assets/project3.jpg';
@@ -14,12 +13,14 @@ const projects = [
     description:
       'This project involves designing a reliable and secure enterprise network for CBETECH plc, a tech support company based in Ethiopia. The goal is to interconnect the head office in Addis Ababa with upcoming branch offices in Adama, Hawassa, and Mekelle, ensuring smooth communication and IT service delivery across all locations.',
     image: project1,
+    link: 'https://github.com/mahideme/enterprise-network-project',
   },
   {
     title: 'Campus Network Project',
     description:
       'I designed this campus network project to demonstrate redundancy and high availability using core networking components. The setup includes two Layer 3 switches, two routers, and dual ISP connections to ensure failover and load balancing. The network also incorporates multi-switch architecture for improved scalability and resilience, simulating a real-world enterprise campus environment.',
     image: project2,
+    link: 'https://github.com/mahideme/Campus-project',
   },
   {
     title: 'Cloud Computing Project',
@@ -33,6 +34,7 @@ const projects = [
     description:
       'I created this simple To-Do List web app using basic HTML, CSS, and JavaScript to practice and understand core frontend development concepts. It allows users to add, mark, and delete tasks. This project helped me explore DOM manipulation, event handling, and custom styling.',
     image: project4,
+    link: 'https://github.com/mahideme/To-do-list',
   },
 ];
 
@@ -62,7 +64,6 @@ const Work = () => {
               data-aos="fade-up"
               data-aos-delay={index * 200}
             >
-              
               <div className="flex justify-center mb-4">
                 <img
                   src={project.image}
@@ -71,7 +72,6 @@ const Work = () => {
                 />
               </div>
 
-              
               <h3 className="text-2xl font-bold text-gray-800 dark:text-white mb-3">
                 {project.title}
               </h3>
@@ -79,15 +79,19 @@ const Work = () => {
                 {project.description}
               </p>
 
-            
               {project.comingSoon ? (
                 <div className="inline-block bg-gray-500 text-white px-4 py-2 rounded font-semibold opacity-70 cursor-not-allowed">
                   Coming Soon
                 </div>
               ) : (
-                <div className="inline-block bg-blue-600 text-white px-4 py-2 rounded font-semibold">
-                  Project Preview
-                </div>
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block bg-blue-600 text-white px-4 py-2 rounded font-semibold hover:bg-blue-700 transition"
+                >
+                  View Project
+                </a>
               )}
             </div>
           ))}
