@@ -31,9 +31,9 @@ const About = () => {
           data-aos="fade-up"
           data-aos-delay="100"
         >
-          I'm a fourth-year Computer Science and Engineering student at ASTU, passionate about solving problems through technology and logical thinking. I have a strong foundation in programming languages like Python and continuously work to sharpen my technical skills.
+          I'm a fives-year Computer Science and Engineering student at ASTU, passionate about solving problems through technology and logical thinking. I have a strong foundation in programming languages like Python and continuously work to sharpen my technical skills.
           <br/><br/>
-          Alongside programming, I am building expertise in networking through the Cisco Networking Academy and completed a networking-focused internship at CBE. Recently, I have begun exploring cloud computing to expand my knowledge further.
+          Alongside programming, I am building expertise in networking through the Cisco Networking Academy and gained hands-on experience during my 2024 networking internship at CBE. In 2025, I expanded my skills further through a system and cloud deployment internship at IE Network Solutions, strengthening my understanding of cloud technologies.
         </p>
 
         <p 
