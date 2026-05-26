@@ -14,6 +14,7 @@ const Navbar = () => {
     { id: 'home', label: 'Home' },
     { id: 'about', label: 'About' },
     { id: 'work', label: 'Work' },
+    { id: 'certificates', label: 'Certificates' },
     { id: 'contact', label: 'Contact' }
   ];
 
@@ -44,15 +45,11 @@ const Navbar = () => {
       <nav className={`p-4 flex justify-between items-center transition-all duration-300 fixed top-0 left-0 w-full z-50 ${scrolled ? 'bg-gradient-to-r from-slate-800 via-slate-700 to-slate-800 backdrop-blur-md shadow-xl' : 'bg-slate-800'}`}>
        
         <div className="flex items-center justify-center gap-2">
+          <div className="flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-tr from-blue-600 to-indigo-600 text-white font-extrabold text-3xl shadow-2xl hover:shadow-blue-400/50 hover:scale-110 transition-all duration-500 ease-in-out">
+            MD
+          </div>
+        </div>
 
-  <div className="flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-tr from-blue-600 to-indigo-600 text-white font-extrabold text-3xl shadow-2xl hover:shadow-blue-400/50 hover:scale-110 transition-all duration-500 ease-in-out">
-    MD
-  </div>
-</div>
-
-
-
-    
         <div className="hidden md:flex space-x-8 gap-10">
           {navItems.map((item) => (
             <a
@@ -70,7 +67,6 @@ const Navbar = () => {
           ))}
         </div>
 
-      
         <div className="md:hidden text-gray-200">
           <button onClick={toggleMenu} className="text-3xl">
             {menuOpen ? <FaTimes /> : <FaBars />}
@@ -78,7 +74,6 @@ const Navbar = () => {
         </div>
       </nav>
 
-  
       {menuOpen && (
         <div className="fixed top-16 left-0 w-full bg-slate-800 z-40 md:hidden transition-transform transform animate-slideDown">
           <div className="flex flex-col p-6 space-y-6">
@@ -101,7 +96,6 @@ const Navbar = () => {
         </div>
       )}
 
-    
       <div className="fixed right-4 bottom-4 z-30 md:right-8 md:bottom-8 animate-bounce-slow">
         <a href="#contact">
           <button className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-all duration-300 shadow-lg flex items-center gap-2 hover:scale-105 transform">
